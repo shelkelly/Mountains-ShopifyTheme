@@ -68,20 +68,6 @@
         "full_width": false
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "cutting-boards",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
@@ -153,7 +139,7 @@
         "57b9a7a8-402d-434b-8074-5a1b37cbb560": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "tumblers"
           }
         }
       },
@@ -173,13 +159,52 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "1627692532669f1d8b": {
+      "type": "collage",
+      "blocks": {
+        "59e1362e-4fb2-44fe-b3b3-c9cfd5ecfbb0": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "1627692532669f1d8b-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "1627692532669f1d8b-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "59e1362e-4fb2-44fe-b3b3-c9cfd5ecfbb0",
+        "1627692532669f1d8b-1",
+        "1627692532669f1d8b-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "image_banner",
     "162768355937e2ed1f",
-    "featured_products",
     "image_text",
-    "1627692519b0801cd7"
+    "1627692519b0801cd7",
+    "1627692532669f1d8b"
   ]
 }
