@@ -116,12 +116,70 @@
         "color_scheme": "background-2",
         "layout": "image_first"
       }
+    },
+    "1627692519b0801cd7": {
+      "type": "collection-list",
+      "blocks": {
+        "1627692519b0801cd7-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "acrylics"
+          }
+        },
+        "1627692519b0801cd7-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "charcuterie-boards"
+          }
+        },
+        "1627692519b0801cd7-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coasters"
+          }
+        },
+        "44f61581-dcc1-477d-a939-d62bcb305ea7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cutting-boards"
+          }
+        },
+        "3a5e0eb1-ff1d-48cf-99af-bbcaaee11883": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-towels"
+          }
+        },
+        "57b9a7a8-402d-434b-8074-5a1b37cbb560": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1627692519b0801cd7-0",
+        "1627692519b0801cd7-1",
+        "1627692519b0801cd7-2",
+        "44f61581-dcc1-477d-a939-d62bcb305ea7",
+        "3a5e0eb1-ff1d-48cf-99af-bbcaaee11883",
+        "57b9a7a8-402d-434b-8074-5a1b37cbb560"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "image_banner",
     "162768355937e2ed1f",
     "featured_products",
-    "image_text"
+    "image_text",
+    "1627692519b0801cd7"
   ]
 }
