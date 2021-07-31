@@ -68,41 +68,6 @@
         "full_width": false
       }
     },
-    "image_text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Contact us for detailed projects!"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Contact us if you need a more hands on approach! We can correspond through email, phone or Zoom to get the product from your imagination to your hands.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Contact Us",
-            "button_link": "shopify:\/\/pages\/contact"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/contact-us-sign-with-phone-on-desk.jpg",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "layout": "image_first"
-      }
-    },
     "1627692519b0801cd7": {
       "type": "collection-list",
       "blocks": {
@@ -160,51 +125,46 @@
         "show_view_all": false
       }
     },
-    "1627692532669f1d8b": {
-      "type": "collage",
+    "image_text": {
+      "type": "image-with-text",
       "blocks": {
-        "59e1362e-4fb2-44fe-b3b3-c9cfd5ecfbb0": {
-          "type": "image",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "heading": "Contact us for detailed projects!"
           }
         },
-        "1627692532669f1d8b-1": {
-          "type": "product",
+        "text": {
+          "type": "text",
           "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
+            "text": "<p>Contact us if you need a more hands on approach! We can correspond through email, phone or Zoom to get the product from your imagination to your hands.<\/p>"
           }
         },
-        "1627692532669f1d8b-2": {
-          "type": "collection",
+        "button": {
+          "type": "button",
           "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "button_label": "Contact Us",
+            "button_link": "shopify:\/\/pages\/contact"
           }
         }
       },
       "block_order": [
-        "59e1362e-4fb2-44fe-b3b3-c9cfd5ecfbb0",
-        "1627692532669f1d8b-1",
-        "1627692532669f1d8b-2"
+        "heading",
+        "text",
+        "button"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "image": "shopify:\/\/shop_images\/contact-us-sign-with-phone-on-desk.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
       }
     }
   },
   "order": [
     "image_banner",
     "162768355937e2ed1f",
-    "image_text",
     "1627692519b0801cd7",
-    "1627692532669f1d8b"
+    "image_text"
   ]
 }
