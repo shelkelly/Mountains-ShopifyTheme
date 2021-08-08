@@ -64,13 +64,13 @@
                             </div>
                           {%- endfor -%}
                         {%- endif -%}
-                        
-                        <script>console.log({{ product | json }});</script>
+                       
                         
                         {% unless line_item.properties == empty %}
 						<ul>
   							{% for property in line_item.properties %}
   							<li>{{ property.first }}: {{ property.last }}</li>
+                          <script>console.log({{ product | json }});</script>
   							{% endfor %}
 						</ul>
 						{% endunless %}
