@@ -62,6 +62,7 @@
                               <dt>{{ option.name }}: </dt>
                               <dd>{{ option.value }}</dd>
                             </div>
+                        <script>console.log({{ product | json }});</script>
                           {%- endfor -%}
                         {%- endif -%}
                         
