@@ -84,6 +84,37 @@
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
+        
+                        {% form 'product', product %}
+
+        <center>
+  		<div><p>
+    		<label for="engravingDesign">Engraving Design Code</label>
+    		<input type="text"
+      		name="properties[Design]"
+            id="engravingDesign">
+          </p>
+  		</div>
+  		<div>
+          <p>
+    		<label for="engravingText">Engraving Text</label>
+    		<input type="text"
+      		name="properties[Text]"
+      		id="engravingText">
+          </p>
+          </div>
+        <div>
+          <p>
+    		<label for="engravingFont">Engraving Font</label>
+    		<input type="text"
+      		name="properties[Font]"
+            id="engravingFont">
+          </p>
+  		</div>
+        </center>
+
+		{% endform %}
+        
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
@@ -175,36 +206,6 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-        
-                {% form 'product', product %}
-
-        <center>
-  		<div><p>
-    		<label for="engravingDesign">Engraving Design Code</label>
-    		<input type="text"
-      		name="properties[Design]"
-            id="engravingDesign">
-          </p>
-  		</div>
-  		<div>
-          <p>
-    		<label for="engravingText">Engraving Text</label>
-    		<input type="text"
-      		name="properties[Text]"
-      		id="engravingText">
-          </p>
-          </div>
-        <div>
-          <p>
-    		<label for="engravingFont">Engraving Font</label>
-    		<input type="text"
-      		name="properties[Font]"
-            id="engravingFont">
-          </p>
-  		</div>
-        </center>
-
-		{% endform %}
         
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
