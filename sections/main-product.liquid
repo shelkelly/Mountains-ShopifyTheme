@@ -175,6 +175,37 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+        
+                {% form 'product', product %}
+
+        <center>
+  		<div><p>
+    		<label for="engravingDesign">Engraving Design Code</label>
+    		<input type="text"
+      		name="properties[Design]"
+            id="engravingDesign">
+          </p>
+  		</div>
+  		<div>
+          <p>
+    		<label for="engravingText">Engraving Text</label>
+    		<input type="text"
+      		name="properties[Text]"
+      		id="engravingText">
+          </p>
+          </div>
+        <div>
+          <p>
+    		<label for="engravingFont">Engraving Font</label>
+    		<input type="text"
+      		name="properties[Font]"
+            id="engravingFont">
+          </p>
+  		</div>
+        </center>
+
+		{% endform %}
+        
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -252,35 +283,7 @@
               </div>
             </noscript>
         
-        {% form 'product', product %}
 
-        <center>
-  		<div><p>
-    		<label for="engravingDesign">Engraving Design Code</label>
-    		<input type="text"
-      		name="properties[Design]"
-            id="engravingDesign">
-          </p>
-  		</div>
-  		<div>
-          <p>
-    		<label for="engravingText">Engraving Text</label>
-    		<input type="text"
-      		name="properties[Text]"
-      		id="engravingText">
-          </p>
-          </div>
-        <div>
-          <p>
-    		<label for="engravingFont">Engraving Font</label>
-    		<input type="text"
-      		name="properties[Font]"
-            id="engravingFont">
-          </p>
-  		</div>
-        </center>
-
-		{% endform %}
         
           {%- when 'buy_buttons' -%}
             <product-form class="product-form">
