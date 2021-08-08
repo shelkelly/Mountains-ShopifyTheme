@@ -85,36 +85,29 @@
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
         
-        {% form 'product', product %}
         <center>
-  		<div><p>
-    		<label for="engravingDesign">Engraving Design Code</label>
-    		<input type="text"
-            class="form"
-      		name="properties[Design]"
-            id="engravingDesign">
-          </p>
-  		</div>
-  		<div>
-          <p>
-          <label for="engravingText">Engraving Text</label>
-    		<input type="text"
-            class="form"
-      		name="properties[Text]"
-      		id="engravingText">
-          </p>
-          </div>
-        <div>
-          <p>
-    		<label for="engravingFont">Engraving Font</label>
-    		<input type="text"
-            class="form"
-      		name="properties[Font]"
-            id="engravingFont">
-          </p>
-  		</div>
+          <form>
+  			<div><p>
+    			<label for="engraving-design">Engraving Design</label>:
+    			<input name="properties[Engraving Design]"
+            	id="engraving-design">
+          	</p>
+  			</div>
+  			<div><p>
+          		<label for="engraving-text">Engraving Text</label>:
+    			<input name="properties[Engraving Text]"
+      			id="engraving-text">
+          	</p>
+          	</div>
+        	<div>
+          	<p>
+    			<label for="engravingFont">Engraving Font</label>:
+    			<input name="properties[Engraving Font]"
+            	id="engraving-font">
+          	</p>
+  			</div>
+          </form>
         </center>
-		{% endform %}
         
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -292,7 +285,6 @@
               {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                 <div class="product-form__buttons">
-                          <script>console.log({{ product | json }});</script>
                   <button
                     type="submit"
                     name="add"
