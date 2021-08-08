@@ -65,7 +65,21 @@
                           {%- endfor -%}
                         {%- endif -%}
                         
-
+                        {% for line_item in cart.line_items %}
+                        <!-- line item info -->
+                        
+                        	{% unless line_item.properties == empty %}
+                        		{% for property in line_item.properties %}
+                        			{{ property.first }}:
+                        			
+                        			{% if property.last contains '/uploads/' %}
+                        				<a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+                        			{% else %}
+                        				{{ property.last }}
+                        			{% endif %}
+                        		{% endfor %}
+                        	{% endunless %}
+                        {% endfor %}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
