@@ -85,8 +85,7 @@
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
         
-                        {% form 'product', product %}
-
+        {% form 'product', product %}
         <center>
   		<div><p>
     		<label for="engravingDesign">Engraving Design Code</label>
@@ -97,7 +96,7 @@
   		</div>
   		<div>
           <p>
-    		<label for="engravingText">Engraving Text</label>
+          <p><label for="engravingText">Engraving Text</label></p>
     		<input type="text"
       		name="properties[Text]"
       		id="engravingText">
@@ -112,7 +111,6 @@
           </p>
   		</div>
         </center>
-
 		{% endform %}
         
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
