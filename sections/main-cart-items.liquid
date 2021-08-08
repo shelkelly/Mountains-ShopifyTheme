@@ -65,15 +65,6 @@
                           {%- endfor -%}
                         {%- endif -%}
                        
-                        
-                        {% unless line_item.properties == empty %}
-						<ul>
-  							{% for property in line_item.properties %}
-  							<li>{{ property.first }}: {{ property.last }}</li>
-                          <script>console.log({{ product | json }});</script>
-  							{% endfor %}
-						</ul>
-						{% endunless %}
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
