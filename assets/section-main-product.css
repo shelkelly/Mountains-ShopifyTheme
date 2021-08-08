@@ -785,6 +785,10 @@ a.product__text {
   }
 }
 
+.form {
+  text-align: center;
+}
+
 .product-popup-modal__toggle {
   background-color: var(--color-background);
   border: 0.1rem solid var(--color-foreground-10);
